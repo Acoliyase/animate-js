@@ -1,3 +1,60 @@
+# animate-js
+
+A modern animation project scaffold inspired by Motion/Anime style APIs.
+
+This repository contains a full Astro + React site scaffold (originally based on Wix templates) and a self-contained static demo suitable for publishing on GitHub Pages without any private dependencies.
+
+## Quick: GitHub Pages demo (no private deps)
+
+- A static demo is included at `public/demo/` which uses only the browser Web Animations API.
+- The demo requires no `npm install` and no access to private registries — you can publish it directly.
+
+How to publish the demo:
+
+1) Docs folder method
+
+   - Copy the contents of `public/demo/` into a `docs/` folder at the repository root.
+   - Push to `main` and in GitHub repository Settings → Pages, select the `main` branch and `/docs` folder.
+
+2) gh-pages branch method
+
+   - Create a `gh-pages` branch and put the files from `public/demo/` at the root of that branch.
+   - Push the `gh-pages` branch and enable Pages for that branch in the repository Settings.
+
+Either option will publish a static page (HTML + JS) that does not rely on private packages.
+
+## Notes about private / paid dependencies
+
+The original scaffold includes many `@wix/*` packages and other enterprise packages which may require access to private registries or accounts. To avoid build-time failures on GitHub Actions or other CI, either:
+
+- Use the provided static demo in `public/demo/` (recommended, zero-dependency), or
+- Remove/replace private packages in `package.json` with public alternatives before attempting to build on CI, or
+- Configure the CI environment with credentials to access any private registries used by the project.
+
+If you want, I can help:
+
+- Create a minimal `package.json` for a pure static demo site (no private deps), or
+- Replace selected private packages with public alternatives and update code accordingly.
+
+## Local dev (full project — may require private registries)
+
+This project originally uses Wix tooling and a full set of dependencies. If you have access to the required registries, run:
+
+```bash
+npm run install-template
+npm run dev
+```
+
+If you do not have access to private registries, use the static demo described above.
+
+## Where to find the demo
+
+- `public/demo/index.html`
+- `public/demo/demo.js`
+
+## Contact / Contributing
+
+If you want me to continue and (A) publish the demo to GitHub Pages, (B) remove private deps from `package.json`, or (C) adapt the site to a minimal build that runs on public CI — tell me which option and I'll proceed.
 # Wixstro - Wix Astro Template
 
 A modern, full-featured Wix Astro template built with React, TypeScript, and Tailwind CSS. This template provides a solid foundation for building dynamic, interactive websites with Wix's powerful ecosystem.
