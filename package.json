@@ -1,0 +1,27 @@
+{
+  "name": "animate-js",
+  "version": "1.0.0",
+  "type": "module",
+  "private": false,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "npx astro check --js-only",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "astro": "^5.8.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "framer-motion": "^12.5.0",
+    "three": "^0.177.0",
+    "tailwindcss": "^3.4.14"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "vite": "^4.5.0",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "3.1.4"
+  }
+}
