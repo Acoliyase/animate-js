@@ -3,42 +3,329 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Animate-JS — GitHub Pages Demo</title>
+    <title>Animate-JS — Interactive Demo</title>
     <style>
-      body { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:#0f172a; color:#e6eef8; display:flex; align-items:center; justify-content:center; height:100vh; margin:0 }
-      .stage { width:600px; max-width:92vw; text-align:center }
-      .target { width:120px; height:120px; background:linear-gradient(135deg,#06b6d4,#a78bfa); border-radius:16px; margin:36px auto; display:inline-block }
-      .controls { display:flex; gap:8px; justify-content:center; margin-top:10px }
-      button { background:#111827; color:#e6eef8; border:1px solid rgba(255,255,255,0.06); padding:8px 12px; border-radius:8px; cursor:pointer }
-      pre { text-align:left; background:#071024; padding:12px; border-radius:8px; overflow:auto }
-      a.link { color:#7dd3fc }
+      * { box-sizing: border-box; }
+      body { 
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        color: #e6eef8;
+        margin: 0;
+        padding: 20px;
+        min-height: 100vh;
+      }
+      .container { max-width: 1200px; margin: 0 auto; }
+      header { text-align: center; margin-bottom: 40px; }
+      header h1 { margin: 0; font-size: 2.5rem; background: linear-gradient(90deg, #06b6d4, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+      header p { margin: 8px 0 0; color: #9fb3cc; font-size: 0.95rem; }
+
+      .main-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 30px; }
+      @media (max-width: 900px) { .main-grid { grid-template-columns: 1fr; } }
+
+      .card { background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 24px; backdrop-filter: blur(10px); }
+      .card h3 { margin-top: 0; color: #7dd3fc; font-size: 1.2rem; }
+
+      .stage {
+        min-height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(15, 23, 42, 0.8);
+        border-radius: 12px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .target {
+        width: 120px;
+        height: 120px;
+        background: linear-gradient(135deg, #06b6d4, #a78bfa);
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(6, 182, 212, 0.3);
+        cursor: pointer;
+      }
+
+      .target:hover { box-shadow: 0 15px 40px rgba(6, 182, 212, 0.5); }
+
+      .controls {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 8px;
+      }
+
+      button {
+        background: linear-gradient(135deg, #111827, #1f2937);
+        color: #e6eef8;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 10px 14px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        transition: all 0.2s ease;
+        font-weight: 500;
+      }
+
+      button:hover {
+        background: linear-gradient(135deg, #1f2937, #374151);
+        border-color: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+      }
+
+      button:active { transform: translateY(0); }
+
+      button.active { background: linear-gradient(135deg, #06b6d4, #0891b2); border-color: #06b6d4; }
+
+      .slider-group {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 12px 0;
+      }
+
+      .slider-group label {
+        min-width: 80px;
+        font-size: 0.9rem;
+        color: #9fb3cc;
+      }
+
+      input[type="range"] {
+        flex: 1;
+        height: 6px;
+        border-radius: 3px;
+        background: rgba(255, 255, 255, 0.1);
+        outline: none;
+        -webkit-appearance: none;
+      }
+
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #06b6d4;
+        cursor: pointer;
+      }
+
+      input[type="range"]::-moz-range-thumb {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #06b6d4;
+        cursor: pointer;
+        border: none;
+      }
+
+      .value-display {
+        min-width: 40px;
+        text-align: right;
+        font-size: 0.9rem;
+        color: #7dd3fc;
+      }
+
+      .presets {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+      }
+
+      .code-block {
+        background: #071024;
+        border: 1px solid rgba(6, 182, 212, 0.2);
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 0.85rem;
+        font-family: 'Monaco', 'Courier New', monospace;
+        color: #7dd3fc;
+        overflow-x: auto;
+        margin-top: 12px;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        margin-top: 16px;
+      }
+
+      .stat-box {
+        background: rgba(6, 182, 212, 0.1);
+        border: 1px solid rgba(6, 182, 212, 0.2);
+        border-radius: 8px;
+        padding: 12px;
+        text-align: center;
+      }
+
+      .stat-box .label { font-size: 0.8rem; color: #9fb3cc; text-transform: uppercase; }
+      .stat-box .value { font-size: 1.4rem; font-weight: bold; color: #7dd3fc; margin-top: 4px; }
+
+      .section { margin-bottom: 40px; }
+      .section h2 { margin-top: 0; color: #7dd3cc; font-size: 1.5rem; border-bottom: 2px solid rgba(6, 182, 212, 0.2); padding-bottom: 12px; }
+
+      .color-picker-group {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      input[type="color"] {
+        width: 50px;
+        height: 40px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      .info-box {
+        background: rgba(6, 182, 212, 0.1);
+        border-left: 4px solid #06b6d4;
+        padding: 12px;
+        border-radius: 4px;
+        margin-top: 16px;
+        font-size: 0.9rem;
+        color: #9fb3cc;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 60px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        color: #64748b;
+        font-size: 0.9rem;
+      }
+
+      .success-indicator {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: #10b981;
+        border-radius: 50%;
+        margin-right: 6px;
+      }
     </style>
   </head>
   <body>
-    <div class="stage">
-      <h1>Animate-JS — Static Demo (GitHub Pages)</h1>
-      <p style="color:#9fb3cc;">This demo uses only the Web Animations API — no private packages required.</p>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <h1>✨ Animate-JS</h1>
+        <p>Interactive Web Animations API Demo — No Dependencies</p>
+      </header>
 
-      <div class="target" id="box" aria-label="Animated box"></div>
+      <!-- Main Animation Stage -->
+      <div class="section">
+        <div class="main-grid">
+          <!-- Stage -->
+          <div class="card">
+            <h3>Preview</h3>
+            <div class="stage">
+              <div class="target" id="box" title="Click to play random animation"></div>
+            </div>
+          </div>
 
-      <div class="controls">
-        <button id="btn-fade">Fade In</button>
-        <button id="btn-bounce">Bounce</button>
-        <button id="btn-rotate">Rotate</button>
-        <button id="btn-reset">Reset</button>
+          <!-- Quick Controls -->
+          <div class="card">
+            <h3>Quick Actions</h3>
+            <div class="controls">
+              <button id="btn-fade" title="Fade in with scale">Fade In</button>
+              <button id="btn-bounce" title="Bounce animation">Bounce</button>
+              <button id="btn-rotate" title="Spin 360°">Rotate</button>
+              <button id="btn-pulse" title="Pulse effect">Pulse</button>
+              <button id="btn-slide" title="Slide from left">Slide</button>
+              <button id="btn-flip" title="3D flip effect">Flip</button>
+              <button id="btn-shake" title="Shake animation">Shake</button>
+              <button id="btn-reset" title="Clear all animations">Reset</button>
+            </div>
+
+            <div class="stats">
+              <div class="stat-box">
+                <div class="label">Animations</div>
+                <div class="value" id="stat-count">0</div>
+              </div>
+              <div class="stat-box">
+                <div class="label">Duration</div>
+                <div class="value" id="stat-duration">0ms</div>
+              </div>
+              <div class="stat-box">
+                <div class="label">Status</div>
+                <div class="value" id="stat-status" style="font-size: 0.9rem;">Ready</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <h4 style="margin-top:20px">Example usage (vanilla)</h4>
-      <pre id="snippet">// Uses Web Animations API
-document.getElementById('box').animate([
-  { transform: 'translateY(0) scale(1)', opacity: 1 },
-  { transform: 'translateY(-40px) scale(1.05)', opacity: 0.9 },
-  { transform: 'translateY(0) scale(1)', opacity: 1 }
-], { duration: 600, easing: 'cubic-bezier(.22,.9,.34,1)' });
-</pre>
+      <!-- Advanced Controls -->
+      <div class="section">
+        <div class="card">
+          <h3>⚙️ Advanced Controls</h3>
 
-      <p style="color:#9fb3cc; margin-top:6px">Publish this folder as a GitHub Pages site (branch: <code>gh-pages</code> or `docs/` folder).</p>
+          <div class="slider-group">
+            <label>Duration:</label>
+            <input type="range" id="duration-slider" min="200" max="3000" value="600" step="100" />
+            <div class="value-display"><span id="duration-value">600</span>ms</div>
+          </div>
+
+          <div class="slider-group">
+            <label>Scale:</label>
+            <input type="range" id="scale-slider" min="0.5" max="2" value="1" step="0.1" />
+            <div class="value-display"><span id="scale-value">1</span>x</div>
+          </div>
+
+          <div class="slider-group">
+            <label>Delay:</label>
+            <input type="range" id="delay-slider" min="0" max="1000" value="0" step="50" />
+            <div class="value-display"><span id="delay-value">0</span>ms</div>
+          </div>
+
+          <div class="color-picker-group">
+            <label>Color:</label>
+            <input type="color" id="color-picker" value="#06b6d4" />
+            <span id="color-value">#06b6d4</span>
+          </div>
+
+          <div class="info-box">
+            <span class="success-indicator"></span>
+            Adjust parameters and click animations to see live changes.
+          </div>
+        </div>
+      </div>
+
+      <!-- Presets -->
+      <div class="section">
+        <div class="card">
+          <h3>🎬 Animation Presets</h3>
+          <div class="presets">
+            <button id="preset-entrance" data-preset="entrance">Entrance</button>
+            <button id="preset-attention" data-preset="attention">Attention</button>
+            <button id="preset-exit" data-preset="exit">Exit</button>
+            <button id="preset-loop" data-preset="loop">Loop</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Code Example -->
+      <div class="section">
+        <div class="card">
+          <h3>💻 Code Example</h3>
+          <div class="code-block" id="code-display">
+// Fade in animation
+const box = document.getElementById('box');
+box.animate([
+  { opacity: 0, transform: 'scale(0.85)' },
+  { opacity: 1, transform: 'scale(1)' }
+], { duration: 600, easing: 'ease-out' });
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <p>Built with Web Animations API • No dependencies • Fully open-source</p>
+      </footer>
     </div>
+
     <script src="demo.js"></script>
   </body>
 </html>
