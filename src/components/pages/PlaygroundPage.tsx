@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Slider } from '@/components/ui/slider';
 import { Label } from '@/components/ui/label';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { motion as motionApi, timeline as timelineApi, remove as removeAnim } from '@/lib/animator';
 
 const presetAnimations = [
   {
@@ -54,13 +55,31 @@ export default function PlaygroundPage() {
 
   const handlePlay = () => {
     setIsPlaying(true);
-    // Simulate animation execution
-    setTimeout(() => setIsPlaying(false), duration[0]);
+    // Execute user's code using the `motion` wrapper
+    try {
+      const fn = new Function('motion', 'timeline', 'target', 'duration', 'easing', 'remove', code);
+      fn(motionApi, timelineApi, animationRef.current || '.target', duration[0], easing, removeAnim);
+    } catch (err) {
+      console.error('Animation error:', err);
+    }
+
+    // Use duration slider as a simple indicator for UI state
+    setTimeout(() => setIsPlaying(false), duration[0] + 50);
   };
 
   const handleReset = () => {
     setIsPlaying(false);
-    // Reset animation state
+    // Remove any running anime animations and reset inline styles
+    if (animationRef.current) {
+      removeAnim(animationRef.current);
+      try {
+        animationRef.current.style.transform = '';
+        animationRef.current.style.opacity = '';
+        animationRef.current.style.backgroundColor = '';
+      } catch (e) {
+        // ignore
+      }
+    }
   };
 
   const exportToCodePen = () => {
