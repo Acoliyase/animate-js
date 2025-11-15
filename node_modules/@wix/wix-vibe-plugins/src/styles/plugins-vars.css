@@ -1,0 +1,398 @@
+:root {
+  --wix-theme-primary: theme(colors.primary, rgb(66, 165, 245));
+  --wix-theme-primary-foreground: theme(colors.primary-foreground, #ffffff);
+  --wix-theme-secondary: theme(colors.secondary, rgb(3, 218, 198));
+  --wix-theme-secondary-foreground: theme(colors.secondary-foreground, #ffffff);
+  /* TODO: what are we using instead of the background token? */
+  --wix-theme-background: theme(colors.background, #ffffff);
+  --wix-theme-foreground: theme(colors.foreground, #000000);
+
+  --theme-font-family-paragraph: theme(fontFamily.paragraph, inherit);
+  --theme-font-family-heading: theme(fontFamily.heading, inherit);
+
+  /* Darker tone variants using color-mix */
+  --wix-theme-primary-dark: color-mix(
+    in srgb,
+    var(--wix-theme-primary) 80%,
+    #000000 20%
+  );
+  --wix-theme-secondary-dark: color-mix(
+    in srgb,
+    var(--wix-theme-secondary) 80%,
+    #000000 20%
+  );
+  --wix-theme-secondary-darker: color-mix(
+    in srgb,
+    var(--wix-theme-secondary) 60%,
+    #000000 40%
+  );
+
+ --wix-theme-danger: color-mix(
+    in srgb,
+    var(--wix-theme-secondary) 20%,
+    #ff4444 80%
+  );
+ --wix-theme-danger-dark: color-mix(
+    in srgb,
+    var(--wix-theme-secondary) 30%,
+    #cc2222 70%
+  );
+ --wix-theme-danger-light: color-mix(
+    in srgb,
+    var(--wix-theme-secondary) 15%,
+    #ff6666 85%
+  );
+ --wix-theme-danger-lighter: color-mix(
+    in srgb,
+    var(--wix-theme-secondary) 10%,
+    #ffaaaa 90%
+  );
+
+  --wix-theme-success: color-mix(
+    in srgb,
+    var(--wix-theme-secondary) 40%,
+    #44cc44 60%
+  );
+  --wix-theme-success-dark: color-mix(
+    in srgb,
+    var(--wix-theme-secondary) 50%,
+    #228822 50%
+  );
+  --wix-theme-success-light: color-mix(
+    in srgb,
+    var(--wix-theme-secondary) 30%,
+    #66dd66 70%
+  );
+
+  --wix-theme-social-link: var(--wix-theme-secondary);
+  --wix-theme-social-link-hover: color-mix(
+    in srgb,
+    var(--wix-theme-secondary) 80%,
+    var(--wix-theme-background) 20%
+  );
+
+  --color-accent: var(--wix-theme-secondary);
+  --color-accent-dark: color-mix(
+    in srgb,
+    var(--wix-theme-secondary) 80%,
+    var(--wix-theme-background) 20%
+  );
+  --color-accent-light: color-mix(
+    in srgb,
+    var(--wix-theme-secondary) 70%,
+    var(--primary-foreground) 30%
+  );
+
+
+  --wix-theme-overlay: var(--wix-theme-background);
+  --wix-theme-modal-bg: var(--wix-theme-background);
+  --wix-theme-grey-dark: color-mix(
+    in srgb,
+    var(--wix-theme-primary) 80%,
+    var(--primary-foreground) 20%
+  );
+  --wix-theme-grey-medium: color-mix(
+    in srgb,
+    var(--wix-theme-primary) 60%,
+    var(--primary-foreground) 40%
+  );
+
+  --theme-font-weight-normal: 400;
+  --theme-font-weight-medium: 500;
+  --theme-font-weight-semibold: 600;
+  --theme-font-weight-bold: 700;
+
+  --theme-primary-500: var(--wix-theme-primary);
+  --theme-primary-600: var(--wix-theme-primary-dark);
+  --theme-secondary-500: var(--wix-theme-secondary);
+  --theme-secondary-600: var(--wix-theme-secondary-dark);
+  --theme-secondary-700: var(--wix-theme-secondary-darker);
+
+  --theme-info-500: var(--wix-theme-info);
+  --theme-info-600: var(--wix-theme-info-dark);
+  --theme-info-400: var(--wix-theme-info-light);
+
+  --theme-danger-500: var(--wix-theme-danger);
+  --theme-danger-600: var(--wix-theme-danger-dark);
+  --theme-danger-400: var(--wix-theme-danger-light);
+  --theme-danger-300: var(--wix-theme-danger-lighter);
+
+  --theme-success-500: var(--wix-theme-success);
+  --theme-success-600: var(--wix-theme-success-dark);
+  --theme-success-400: var(--wix-theme-success-light);
+
+  --theme-bg-primary-10: color-mix(
+    in srgb,
+    var(--wix-theme-primary) 10%,
+    transparent 90%
+  );
+  --theme-bg-primary-20: color-mix(
+    in srgb,
+    var(--wix-theme-primary) 20%,
+    transparent 80%
+  );
+  --theme-bg-options: var(--wix-theme-overlay);
+  --theme-bg-modal: var(--wix-theme-modal-bg);
+  --theme-bg-loading: color-mix(
+    in srgb,
+    var(--wix-theme-overlay) 80%,
+    var(--theme-text-content-30) 20%
+  );
+  --theme-bg-card: var(--wix-theme-overlay);
+  --theme-bg-error: var(--wix-theme-danger);
+  --theme-bg-tooltip: var(--wix-theme-overlay);
+
+  --theme-bg-info-10: var(--wix-theme-info);
+  --theme-bg-info-20: var(--wix-theme-info);
+  --theme-bg-success-10: color-mix(
+    in srgb,
+    var(--wix-theme-success) 10%,
+    transparent 90%
+  );
+  --theme-bg-success-20: color-mix(
+    in srgb,
+    var(--wix-theme-success) 20%,
+    transparent 80%
+  );
+  --theme-bg-danger-10: color-mix(
+    in srgb,
+    var(--wix-theme-danger) 10%,
+    transparent 90%
+  );
+  --theme-bg-danger-20: color-mix(
+    in srgb,
+    var(--wix-theme-danger) 20%,
+    transparent 80%
+  );
+
+  --theme-bg-social-button: color-mix(in srgb, #000000 5%, transparent 95%);
+
+  --theme-bg-social-link: color-mix(
+    in srgb,
+    var(--wix-theme-social-link) 20%,
+    transparent 80%
+  );
+
+  --theme-border-primary-10: color-mix(
+    in srgb,
+    var(--wix-theme-primary) 10%,
+    transparent 90%
+  );
+  --theme-border-primary-20: color-mix(
+    in srgb,
+    var(--wix-theme-primary) 20%,
+    transparent 80%
+  );
+  --theme-border-primary-30: color-mix(
+    in srgb,
+    var(--wix-theme-primary) 30%,
+    transparent 70%
+  );
+  --theme-border-card: color-mix(
+    in srgb,
+    var(--wix-theme-overlay) 12%,
+    transparent 88%
+  );
+  --theme-border-card-hover: color-mix(
+    in srgb,
+    var(--wix-theme-overlay) 20%,
+    transparent 80%
+  );
+  --theme-border-error: color-mix(
+    in srgb,
+    var(--wix-theme-danger) 20%,
+    transparent 80%
+  );
+  --theme-border-info-20: color-mix(
+    in srgb,
+    var(--wix-theme-info) 20%,
+    transparent 80%
+  );
+  --theme-border-info-30: color-mix(
+    in srgb,
+    var(--wix-theme-info) 30%,
+    transparent 70%
+  );
+  --theme-border-success-20: color-mix(
+    in srgb,
+    var(--wix-theme-success) 20%,
+    transparent 80%
+  );
+  --theme-border-success-30: color-mix(
+    in srgb,
+    var(--wix-theme-success) 30%,
+    transparent 70%
+  );
+  --theme-border-danger-20: color-mix(
+    in srgb,
+    var(--wix-theme-danger) 20%,
+    transparent 80%
+  );
+  --theme-border-danger-30: color-mix(
+    in srgb,
+    var(--wix-theme-danger) 30%,
+    transparent 70%
+  );
+
+  --theme-border-social-subtle: color-mix(
+    in srgb,
+    #ffffff 10%,
+    transparent 90%
+  );
+  --theme-border-accent-20: color-mix(
+    in srgb,
+    var(--color-accent) 20%,
+    transparent 80%
+  );
+  --theme-border-accent-30: color-mix(
+    in srgb,
+    var(--color-accent) 30%,
+    transparent 70%
+  );
+
+  --theme-bg-accent-20: color-mix(
+    in srgb,
+    var(--color-accent) 20%,
+    transparent 80%
+  );
+
+  --theme-text-primary-300: var(--wix-theme-primary);
+  --theme-text-primary-400: var(--wix-theme-primary-dark);
+  --theme-text-content: var(--wix-theme-foreground);
+  --theme-text-content-30: color-mix(
+    in srgb,
+    var(--wix-theme-foreground) 30%,
+    transparent 70%
+  );
+  --theme-text-content-40: color-mix(
+    in srgb,
+    var(--wix-theme-foreground) 40%,
+    transparent 60%
+  );
+  --theme-text-content-50: color-mix(
+    in srgb,
+    var(--wix-theme-foreground) 50%,
+    transparent 50%
+  );
+  --theme-text-content-60: color-mix(
+    in srgb,
+    var(--wix-theme-foreground) 60%,
+    transparent 40%
+  );
+  --theme-text-content-70: color-mix(
+    in srgb,
+    var(--wix-theme-foreground) 70%,
+    transparent 30%
+  );
+  --theme-text-content-80: color-mix(
+    in srgb,
+    var(--wix-theme-foreground) 80%,
+    transparent 20%
+  );
+  --theme-text-content-90: color-mix(
+    in srgb,
+    var(--wix-theme-foreground) 90%,
+    transparent 10%
+  );
+  --theme-text-success: var(--wix-theme-success);
+  --theme-text-error: var(--wix-theme-danger);
+
+  --theme-text-info: var(--wix-theme-info-light);
+  --theme-text-danger: var(--wix-theme-danger-light);
+  --theme-text-accent: var(--color-accent-light);
+
+  --theme-text-social-muted: color-mix(
+    in srgb,
+    var(--wix-theme-foreground) 60%,
+    transparent 40%
+  );
+  --theme-text-social-x: rgb(var(--wix-theme-social-x));
+  --theme-text-social-facebook: rgb(var(--wix-theme-social-facebook));
+  --theme-text-social-linkedin: rgb(var(--wix-theme-social-linkedin));
+  --theme-text-social-link: var(--wix-theme-social-link);
+
+  --theme-color-border-40: color-mix(
+    in srgb,
+    var(--wix-theme-primary) 40%,
+    transparent 60%
+  );
+  --theme-color-border-80: color-mix(
+    in srgb,
+    var(--wix-theme-primary) 80%,
+    transparent 20%
+  );
+
+  --theme-fallback-color: var(--wix-theme-grey-dark);
+  --theme-dropdown-arrow-color: var(--wix-theme-grey-medium);
+
+  --theme-gradient-primary: linear-gradient(
+    to right,
+    var(--wix-theme-primary),
+    var(--wix-theme-primary-dark)
+  );
+  --theme-gradient-ribbon: linear-gradient(
+    to right,
+    var(--wix-theme-secondary),
+    var(--wix-theme-secondary-dark)
+  );
+  --theme-gradient-success: linear-gradient(
+    to right,
+    var(--wix-theme-success),
+    var(--wix-theme-success-dark)
+  );
+  --theme-gradient-info: linear-gradient(
+    to right,
+    var(--wix-theme-info),
+    var(--wix-theme-info-dark)
+  );
+  --theme-gradient-accent: linear-gradient(
+    to right,
+    var(--color-accent),
+    var(--color-accent-dark)
+  );
+
+  --theme-btn-primary: var(--wix-theme-primary);
+  --theme-btn-primary-hover: var(--wix-theme-primary-dark);
+  --theme-btn-primary-text: var(--wix-theme-primary-foreground);
+  --theme-btn-primary-border: transparent;
+  --theme-btn-secondary: var(--wix-theme-secondary);
+  --theme-btn-secondary-hover: var(--wix-theme-secondary-dark);
+  --theme-btn-secondary-text: var(--wix-theme-secondary-foreground);
+  --theme-btn-secondary-border: transparent;
+  --theme-btn-success: var(--wix-theme-success);
+  --theme-btn-info: var(--wix-theme-info);
+  --theme-btn-danger: var(--wix-theme-danger);
+  --theme-btn-accent: var(--color-accent);
+
+  --theme-hero-text-gradient: linear-gradient(
+    to right,
+    var(--wix-theme-primary),
+    var(--wix-theme-secondary)
+  );
+  --theme-hero-card-gradient: linear-gradient(
+    to right,
+    color-mix(in srgb, var(--wix-theme-primary) 8%, transparent 92%),
+    color-mix(in srgb, var(--wix-theme-secondary) 8%, transparent 92%)
+  );
+  --theme-hero-feature-gradient: linear-gradient(
+    to bottom right,
+    var(--wix-theme-primary),
+    var(--wix-theme-secondary)
+  );
+
+  --wix-theme-info: color-mix(
+    in srgb,
+    var(--wix-theme-primary) 70%,
+    var(--wix-theme-secondary) 30%
+  );
+  --wix-theme-info-dark: color-mix(
+    in srgb,
+    var(--wix-theme-primary) 80%,
+    var(--wix-theme-background) 20%
+  );
+  --wix-theme-info-light: color-mix(
+    in srgb,
+    var(--wix-theme-primary) 50%,
+    var(--primary-foreground) 50%
+  );
+}
