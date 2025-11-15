@@ -1,0 +1,1015 @@
+{
+  "id": "71e3fa0a-33d7-49f0-99e8-17d00943d6a2",
+  "siteName": "AnimateJS",
+  "domainUrl": "animatejs.com",
+  "brandingPresets": [
+    {
+      "presetId": "ee0878dd-c48d-4d12-97ad-ca23ad28610e",
+      "brandIdentity": {
+        "designSummary": "This brand design features a bold and modern aesthetic with a strong emphasis on vibrant color contrasts and clean, geometric typography. The primary colors are a vivid blue and a bright orange, set against a neutral light gray background, creating a high-energy and tech-forward visual identity. The layout employs asymmetrical, layered blocks of color and text, establishing a modular and dynamic composition that guides the user through structured content. Typography is predominantly uppercase, sans-serif, and geometric, reinforcing clarity and innovation. Graphic elements such as circular dot patterns add a sense of motion and connectivity, supporting the theme of collaboration and knowledge sharing. Overall, the design balances energetic color usage with minimalist backgrounds and generous spacing, resulting in a confident, approachable, and forward-thinking brand personality suitable for technology and developer communities.",
+        "toneOfVoice": "Confident, energetic, innovative, approachable, and tech-savvy.",
+        "tones": [
+          "Bold",
+          "Energetic",
+          "Innovative",
+          "Modern",
+          "Clean",
+          "Tech-forward",
+          "Dynamic",
+          "Structured",
+          "Approachable",
+          "Collaborative"
+        ],
+        "designStyle": {
+          "primaryStyle": [
+            "Modern",
+            "Tech-Oriented",
+            "Minimalism"
+          ],
+          "supportingStyles": [
+            "Modular",
+            "Geometric",
+            "Asymmetrical"
+          ]
+        },
+        "palette": {
+          "colors": {
+            "primary": "#0B22FF",
+            "primaryForeground": "#E6E6E6",
+            "secondary": "#FF6A2B",
+            "secondaryForeground": "#000000",
+            "background": "#FFFFFF",
+            "customColors": [
+              {
+                "name": "foreground",
+                "value": "#000000"
+              },
+              {
+                "name": "destructive",
+                "value": "#DF3131"
+              },
+              {
+                "name": "destructiveforeground",
+                "value": "#FFFFFF"
+              }
+            ]
+          },
+          "paletteUsageGuide": "Use the 'primary' color predominantly for headings, key text elements, and interactive links to convey energy and innovation. The 'secondary' color should be applied to navigation bars, call-to-action buttons, and accent elements to create visual contrast and draw user attention. The 'background' color provides a neutral and clean canvas that balances the vibrancy of 'primary' and 'secondary'. Text on 'primary' backgrounds should use 'primaryForeground' for readability, while text on 'secondary' backgrounds should use 'secondaryForeground'. Maintain high contrast between text and backgrounds to ensure accessibility. Avoid mixing 'primary' and 'secondary' colors in close proximity without neutral spacing to prevent visual clutter. The minimal custom colors support a focused and cohesive brand palette.",
+          "paletteAccessibilityNotes": "The combination of 'primary' (#0B22FF) with 'primaryForeground' (#E6E6E6) meets WCAG AA standards for text contrast, ensuring readability. The 'secondary' (#FF6A2B) with 'secondaryForeground' (#000000) also meets WCAG AA contrast requirements. The 'background' (#FFFFFF) provides sufficient contrast with both 'primary' and 'secondary' colors for accessible text and UI elements. Overall, the palette supports strong visual accessibility for users."
+        }
+      },
+      "originImagesUrls": [
+        "https://wixmp-fe53c9ff592a4da924211f23.wixmp.com/uploads/1752414226353-Frame%201707483531.jpg"
+      ]
+    },
+    {
+      "presetId": "65754585-e9c5-4442-a4a7-69fe75686f20",
+      "brandIdentity": {
+        "designSummary": "This brand design embodies a modern, minimalist, and technology-driven aesthetic. It employs a stark color palette dominated by black and white backgrounds, contrasted sharply with a vivid orange accent color used for interactive elements such as links, buttons, and highlights. The typography is monospace, evoking a technical and precise tone, with consistent left alignment and generous spacing to enhance readability. The layout is grid-based and modular, featuring spacious margins and padding that create a clean and uncluttered user experience. Graphic elements include wireframe 3D geometric shapes rendered in white on black backgrounds, reinforcing a futuristic and innovative brand personality. Calls to action are styled with code-like syntax using curly braces and arrows, further emphasizing the brand's tech-savvy identity. Overall, the design communicates professionalism, innovation, and expertise in IT and technology sectors, making it versatile for various modern business applications.",
+        "toneOfVoice": "Professional, innovative, precise, and tech-savvy with a clear and confident communication style.",
+        "tones": [
+          "Minimal",
+          "Futuristic",
+          "Technical",
+          "Clean",
+          "Innovative",
+          "Professional",
+          "Bold",
+          "Structured",
+          "Sophisticated",
+          "Focused"
+        ],
+        "designStyle": {
+          "primaryStyle": [
+            "Minimalism",
+            "Techno-Futuristic",
+            "Monospace Typography"
+          ],
+          "supportingStyles": [
+            "Grid-Based Layout",
+            "Wireframe Graphics",
+            "Modular Design"
+          ]
+        },
+        "palette": {
+          "colors": {
+            "primary": "#D8400E",
+            "primaryForeground": "#FFFFFF",
+            "secondary": "#000000",
+            "secondaryForeground": "#FFFFFF",
+            "background": "#FFFFFF",
+            "customColors": [
+              {
+                "name": "darkbackground",
+                "value": "#000000"
+              },
+              {
+                "name": "textprimary",
+                "value": "#000000"
+              },
+              {
+                "name": "textsecondary",
+                "value": "#D8400E"
+              },
+              {
+                "name": "forgrounde",
+                "value": "#000000"
+              },
+              {
+                "name": "destructive",
+                "value": "#DF3131"
+              },
+              {
+                "name": "destructiveforeground",
+                "value": "#FFFFFF"
+              }
+            ]
+          },
+          "paletteUsageGuide": "Use the 'primary' color for all interactive elements such as buttons, links, and highlights to draw user attention and reinforce brand identity. The 'primaryForeground' color should be used for text or icons placed on 'primary' backgrounds to ensure readability. The 'secondary' color serves as the main background for dark-themed sections, with 'secondaryForeground' used for text and icons on these dark backgrounds. The 'background' color is the default page background for light-themed sections, with 'textPrimary' used for body text and headings on this background. The 'darkBackground' and 'textSecondary' colors are used for high-contrast dark mode or section backgrounds and their corresponding text. This palette ensures strong contrast and accessibility while maintaining a clean and modern aesthetic. Colors should be combined thoughtfully to maintain readability and visual hierarchy, with 'primary' reserved for calls to action and emphasis, and 'secondary' and 'background' providing structural balance.",
+          "paletteAccessibilityNotes": "The combination of 'primary' (#D94A1B) on 'primaryForeground' (#FFFFFF) meets WCAG AA standards for text and interactive elements, ensuring sufficient contrast. The 'secondary' (#000000) background with 'secondaryForeground' (#FFFFFF) text provides excellent contrast exceeding WCAG AAA standards. The 'background' (#FFFFFF) with 'textPrimary' (#000000) also meets WCAG AAA contrast requirements for body text. This palette supports accessibility best practices across light and dark sections, ensuring legibility and user comfort."
+        },
+        "typography": {
+          "headings": {
+            "font": {
+              "role": "Primary Heading Font",
+              "fontFamily": "space grotesk",
+              "fontJustification": ""
+            },
+            "headingsSimilarFonts": [
+              "roboto",
+              "space grotesk",
+              "quicksand"
+            ],
+            "headingsUsageGuide": "Use the 'azeret-mono' font for all headings to maintain a consistent technical and modern tone. Headings should be left-aligned with ample spacing above and below to create clear separation from body text. Pair headings with paragraph text of the same or complementary monospace fonts to preserve visual harmony. Use the 'primary' color for headings on light backgrounds and 'secondaryForeground' on dark backgrounds to ensure readability and emphasis. Avoid overly large font sizes that disrupt the minimalist layout; maintain a balanced hierarchy with clear differentiation from body text.",
+            "headingsAccessibilityNotes": "Headings in 'azeret-mono' combined with 'primary' or 'secondaryForeground' colors meet WCAG AA contrast standards, ensuring clear readability and accessibility for users with visual impairments."
+          },
+          "paragraphs": {
+            "font": {
+              "role": "Main Body Text Font",
+              "fontFamily": "azeret-mono",
+              "fontJustification": ""
+            },
+            "paragraphsSimilarFonts": [
+              "roboto",
+              "space grotesk",
+              "quicksand"
+            ],
+            "paragraphsUsageGuide": "Use the 'azeret-mono' font for body text to maintain consistency with headings and reinforce the technical brand identity. Text should be left-aligned with sufficient line height and letter spacing to enhance readability. On light backgrounds, use 'textPrimary' color, and on dark backgrounds, use 'textSecondary'. Maintain a clear visual hierarchy by using smaller font sizes than headings and avoiding dense blocks of text. Incorporate code-like syntax styling for calls to action or special text elements using the 'primary' color to emphasize interactivity.",
+            "paragraphsAccessibilityNotes": "Body text in 'azeret-mono' with 'textPrimary' on 'background' or 'textSecondary' on 'darkBackground' meets WCAG AA contrast requirements, supporting accessibility and user comfort."
+          },
+          "welcomeSectionTypography": {
+            "placement": "Weighted Quadrant",
+            "implementation": "The welcome section uses a weighted quadrant layout where the left half is dedicated to textual content aligned left, and the right half features a large visual or graphic element. Typography is placed in the lower-left quadrant, creating a balanced and focused entry point. The text uses monospace font with clear hierarchy, and the call-to-action is styled with code-like brackets in the 'primary' color, reinforcing the tech theme. This placement ensures immediate user focus on the message while maintaining visual interest with the adjacent graphic."
+          },
+          "fontSizes": [
+            {
+              "name": "xs",
+              "size": "0.75rem",
+              "lineHeight": "1.2",
+              "letterSpacing": "0.05em",
+              "fontWeight": "400"
+            },
+            {
+              "name": "sm",
+              "size": "0.875rem",
+              "lineHeight": "1.3",
+              "letterSpacing": "0.04em",
+              "fontWeight": "400"
+            },
+            {
+              "name": "base",
+              "size": "1rem",
+              "lineHeight": "1.5",
+              "letterSpacing": "0.03em",
+              "fontWeight": "400"
+            },
+            {
+              "name": "lg",
+              "size": "1.125rem",
+              "lineHeight": "1.5",
+              "letterSpacing": "0.02em",
+              "fontWeight": "500"
+            },
+            {
+              "name": "xl",
+              "size": "1.25rem",
+              "lineHeight": "1.6",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            },
+            {
+              "name": "2xl",
+              "size": "1.5rem",
+              "lineHeight": "1.6",
+              "letterSpacing": "0em",
+              "fontWeight": "600"
+            },
+            {
+              "name": "3xl",
+              "size": "1.875rem",
+              "lineHeight": "1.4",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            },
+            {
+              "name": "4xl",
+              "size": "2.25rem",
+              "lineHeight": "1.3",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            },
+            {
+              "name": "5xl",
+              "size": "3rem",
+              "lineHeight": "1.2",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            },
+            {
+              "name": "6xl",
+              "size": "3.75rem",
+              "lineHeight": "1.1",
+              "letterSpacing": "-0.04em",
+              "fontWeight": "800"
+            },
+            {
+              "name": "7xl",
+              "size": "4.5rem",
+              "lineHeight": "1.1",
+              "letterSpacing": "-0.05em",
+              "fontWeight": "900"
+            },
+            {
+              "name": "8xl",
+              "size": "6rem",
+              "lineHeight": "1",
+              "letterSpacing": "-0.06em",
+              "fontWeight": "900"
+            },
+            {
+              "name": "9xl",
+              "size": "8rem",
+              "lineHeight": "1",
+              "letterSpacing": "-0.07em",
+              "fontWeight": "900"
+            }
+          ]
+        },
+        "layout": {
+          "layoutDna": {
+            "densitySpectrum": "Balanced",
+            "contrastSpectrum": "High-Contrast",
+            "gridAlignmentSpectrum": "Strict Grid",
+            "negativeSpaceUsage": "Generous",
+            "textVsImageEmphasis": "Balanced",
+            "complexitySpectrum": "Simple & Clean"
+          },
+          "grid": {
+            "compositionApproach": "Modular",
+            "spacing": {
+              "columns": "12-column grid",
+              "rows": "Defined content rows",
+              "gaps": "Consistent medium gaps"
+            },
+            "margins": "Generous page margins",
+            "padding": "Consistent padding within containers"
+          }
+        },
+        "components": {
+          "containers": "Containers are defined with clear boundaries and consistent padding, using either white or black backgrounds to create distinct sections. They maintain a minimalist style with no excessive decoration, relying on color contrast and spacing to separate content areas. The 'darkBackground' container style is used for service sections, while 'background' containers are used for introductory and informational content.",
+          "images": "Images and graphics are treated as focal points within their containers, often occupying half or full container width. Wireframe 3D shapes are used as illustrative elements, rendered in white lines on black backgrounds to maintain the tech aesthetic. Images are clean, with no borders or shadows, emphasizing clarity and modernity.",
+          "buttons": "Buttons are styled minimally, often as text links or outlined boxes in the 'primary' color. They use monospace font with code-like syntax (curly braces and arrows) to reinforce the brand's technical identity. Buttons have no heavy backgrounds or gradients, maintaining the minimalist and high-contrast design."
+        },
+        "graphicElements": {
+          "icons": "Icons are minimal and line-based, consistent with the wireframe style. They use the 'primary' color for emphasis and are simple in form to maintain clarity and modernity.",
+          "illustrations": "Illustrations consist primarily of 3D wireframe geometric shapes rendered in white on black backgrounds. These shapes convey complexity and innovation without overwhelming the design, supporting the futuristic and technical brand personality.",
+          "stickers": "No stickers or badge-style elements are present, maintaining the clean and minimal aesthetic."
+        }
+      },
+      "originImagesUrls": [
+        "https://wixmp-fe53c9ff592a4da924211f23.wixmp.com/uploads/1750170708963-Screenshot%202025-06-05%20at%2015.50.53.png"
+      ]
+    },
+    {
+      "presetId": "05d904e4-2dcb-41c6-8d24-51e9b498250c",
+      "brandIdentity": {
+        "designSummary": "This brand identity embraces a bold, avant-garde visual style rooted in glitch art and digital retro aesthetics. The design features a high-contrast color palette dominated by black and white, punctuated with vivid neon accent colors such as lime green, magenta, cyan, red, and blue. These colors evoke the look of vintage broadcast test patterns and digital screen calibration bars, reinforcing a tech-inspired, experimental atmosphere. Typography is modern and minimalistic, combining large, impactful sans-serif fonts with monospaced or typewriter-style fonts that suggest a digital terminal or coding environment. The layout is modular and grid-based but intentionally irregular, creating visual tension and a sense of controlled chaos typical of glitch art. Graphic elements include pixelated noise textures, static patterns, and distorted geometric shapes, which are integral to the brand's digital art identity. Overall, the design conveys a cutting-edge, artistic, and tech-savvy personality that breaks from traditional web design conventions.",
+        "toneOfVoice": "Edgy, experimental, artistic, tech-savvy, innovative, and bold.",
+        "tones": [
+          "Disruptive",
+          "Futuristic",
+          "Minimalistic",
+          "High-Contrast",
+          "Digital",
+          "Retro-Tech",
+          "Avant-Garde",
+          "Creative",
+          "Energetic",
+          "Experimental"
+        ],
+        "designStyle": {
+          "primaryStyle": [
+            "Glitch Art",
+            "Minimalism",
+            "Digital Retro"
+          ],
+          "supportingStyles": [
+            "Modular Layout",
+            "Techno-Futurism",
+            "Pixel Art"
+          ]
+        },
+        "palette": {
+          "colors": {
+            "primary": "#000000",
+            "primaryForeground": "#FFFFFF",
+            "secondary": "#00FF00",
+            "secondaryForeground": "#000000",
+            "background": "#FFFFFF",
+            "customColors": [
+              {
+                "name": "neonmagenta",
+                "value": "#FF00FF"
+              },
+              {
+                "name": "neoncyan",
+                "value": "#00FFFF"
+              },
+              {
+                "name": "neonred",
+                "value": "#FF0000"
+              },
+              {
+                "name": "neonblue",
+                "value": "#0000FF"
+              },
+              {
+                "name": "staticgray",
+                "value": "#7F7F7F"
+              },
+              {
+                "name": "foreground",
+                "value": "#000000"
+              },
+              {
+                "name": "destructive",
+                "value": "#DF3131"
+              },
+              {
+                "name": "destructiveforeground",
+                "value": "#FFFFFF"
+              }
+            ]
+          },
+          "paletteUsageGuide": "Use the 'primary' color as the dominant background or text color to establish a strong, high-contrast foundation. The 'primaryForeground' color should be used for text and icons on 'primary' backgrounds to ensure readability. The 'secondary' color, a vivid neon green, serves as a highlight and branding accent, paired with 'secondaryForeground' for contrast. Custom colors such as 'neonMagenta', 'neonCyan', 'neonRed', and 'neonBlue' are used sparingly in graphic elements and color calibration bars to evoke a digital glitch aesthetic. The custom color foreground is paired with the background. The 'staticGray' color is reserved for noise and static textures, adding depth and visual interest. These colors should be combined to create dynamic, energetic compositions while maintaining accessibility and legibility.",
+          "paletteAccessibilityNotes": "The 'primary' and 'primaryForeground' color combination meets WCAG AA standards for text contrast, ensuring readability. The 'secondary' and 'secondaryForeground' pairing also meets contrast requirements for accent elements. Custom neon colors should be used primarily in large graphic elements or non-textual components to avoid accessibility issues. When used for text or UI elements, ensure sufficient contrast by pairing with 'primary' or 'background' colors. The 'staticGray' color is used decoratively and does not require strict contrast compliance."
+        },
+        "typography": {
+          "headings": {
+            "font": {
+              "role": "Primary Heading Font",
+              "fontFamily": "helvetica-w01-roman",
+              "fontJustification": ""
+            },
+            "headingsSimilarFonts": [
+              "roboto",
+              "raleway",
+              "poppins-v2"
+            ],
+            "headingsUsageGuide": "Use the heading font in large sizes with tight letter spacing to create impactful, bold statements. Headings should contrast sharply with body text, using the 'primaryForeground' color on 'primary' backgrounds or vice versa. The font pairs well with monospaced paragraph fonts to reinforce the digital aesthetic. Maintain consistent vertical rhythm and spacing to balance the modular layout.",
+            "headingsAccessibilityNotes": "Headings using the 'primaryForeground' color on 'primary' backgrounds meet WCAG AA contrast standards, ensuring clear readability."
+          },
+          "paragraphs": {
+            "font": {
+              "role": "Main Body Text Font",
+              "fontFamily": "courier new",
+              "fontJustification": ""
+            },
+            "paragraphsSimilarFonts": [
+              "roboto",
+              "open sans",
+              "work-sans-v2"
+            ],
+            "paragraphsUsageGuide": "Paragraph text should be set in the monospaced font to reinforce the tech and glitch theme. Use moderate font sizes with ample line height for readability. Text color should be 'primaryForeground' on 'primary' backgrounds or 'primary' on 'background' to maintain contrast. Pairing with bold sans-serif headings creates a dynamic typographic hierarchy.",
+            "paragraphsAccessibilityNotes": "Paragraph text combinations with 'primaryForeground' and 'primary' or 'background' colors meet WCAG AA contrast requirements for body text."
+          },
+          "welcomeSectionTypography": {
+            "placement": "Top-Third Anchor",
+            "implementation": "The welcome section uses a large, bold heading anchored in the top third of the viewport, creating immediate visual impact. The heading is paired with smaller monospaced body text aligned left, with ample negative space around to emphasize the glitch-inspired graphics on the right. This placement balances text and visuals, guiding the viewer's eye naturally from the bold statement to supporting content."
+          },
+          "fontSizes": [
+            {
+              "name": "xs",
+              "size": "0.75rem",
+              "lineHeight": "1",
+              "letterSpacing": "0.05em",
+              "fontWeight": "400"
+            },
+            {
+              "name": "sm",
+              "size": "0.875rem",
+              "lineHeight": "1.25",
+              "letterSpacing": "0.04em",
+              "fontWeight": "400"
+            },
+            {
+              "name": "base",
+              "size": "1rem",
+              "lineHeight": "1.5",
+              "letterSpacing": "0.03em",
+              "fontWeight": "400"
+            },
+            {
+              "name": "lg",
+              "size": "1.125rem",
+              "lineHeight": "1.5",
+              "letterSpacing": "0.02em",
+              "fontWeight": "500"
+            },
+            {
+              "name": "xl",
+              "size": "1.25rem",
+              "lineHeight": "1.5",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            },
+            {
+              "name": "2xl",
+              "size": "1.5rem",
+              "lineHeight": "1.4",
+              "letterSpacing": "0em",
+              "fontWeight": "600"
+            },
+            {
+              "name": "3xl",
+              "size": "1.875rem",
+              "lineHeight": "1.3",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            },
+            {
+              "name": "4xl",
+              "size": "2.25rem",
+              "lineHeight": "1.2",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            },
+            {
+              "name": "5xl",
+              "size": "3rem",
+              "lineHeight": "1.1",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            },
+            {
+              "name": "6xl",
+              "size": "3.75rem",
+              "lineHeight": "1.1",
+              "letterSpacing": "-0.04em",
+              "fontWeight": "800"
+            },
+            {
+              "name": "7xl",
+              "size": "4.5rem",
+              "lineHeight": "1",
+              "letterSpacing": "-0.05em",
+              "fontWeight": "900"
+            },
+            {
+              "name": "8xl",
+              "size": "6rem",
+              "lineHeight": "1",
+              "letterSpacing": "-0.06em",
+              "fontWeight": "900"
+            },
+            {
+              "name": "9xl",
+              "size": "8rem",
+              "lineHeight": "1",
+              "letterSpacing": "-0.07em",
+              "fontWeight": "900"
+            }
+          ]
+        },
+        "layout": {
+          "layoutDna": {
+            "densitySpectrum": "Balanced",
+            "contrastSpectrum": "High-Contrast",
+            "gridAlignmentSpectrum": "Modular",
+            "negativeSpaceUsage": "Generous",
+            "textVsImageEmphasis": "Balanced",
+            "complexitySpectrum": "Moderately Complex"
+          },
+          "grid": {
+            "compositionApproach": "Modular",
+            "spacing": {
+              "columns": "12-column grid",
+              "rows": "Defined content rows",
+              "gaps": "Variable large gaps"
+            },
+            "margins": "Generous page margins",
+            "padding": "Consistent padding within containers"
+          }
+        },
+        "components": {
+          "containers": "Containers use solid black or white backgrounds to create strong contrast zones. They are often full-width with generous padding and margins to isolate content blocks. Accent containers use neon colors sparingly to highlight key areas without overwhelming the layout.",
+          "images": "Images and graphic elements are treated as integral parts of the design, often featuring glitch effects, pixelation, and static noise textures. They are framed within geometric shapes such as circles or rectangles and placed asymmetrically to create visual tension.",
+          "buttons": "Buttons are minimalistic with solid neon backgrounds or outlined styles using 'secondary' or custom neon colors. Text on buttons uses 'primaryForeground' or 'primary' colors to maintain contrast. Hover states invert colors or add glitch-like animations for interactivity."
+        },
+        "graphicElements": {
+          "icons": "Icons are pixelated or geometric, often monochrome or neon-colored, matching the glitch aesthetic. They are simple but bold, used sparingly to support navigation and calls to action.",
+          "illustrations": "Illustrations are abstract, glitch-inspired shapes with pixelation, static noise, and bright neon colors. They serve as visual anchors and thematic reinforcements rather than detailed imagery.",
+          "stickers": "Stickers or badges, if used, follow the glitch theme with pixelated edges, neon outlines, and static textures. They are used to highlight special features or calls to action."
+        }
+      },
+      "originImagesUrls": [
+        "https://wixmp-fe53c9ff592a4da924211f23.wixmp.com/uploads/1752422373357-Screenshot%202025-07-13%20at%2018.59.06.png"
+      ]
+    },
+    {
+      "presetId": "622b35b7-e3b0-45ba-a861-6cd03cd252bc",
+      "brandIdentity": {
+        "designSummary": "This brand identity embraces a vibrant and playful visual style characterized by bold, saturated colors and expressive, hand-drawn typography. The primary color palette features bright yellow as the main background, complemented by royal blue and vivid red accents that create energetic contrasts. Secondary colors like soft pink and medium blue are used strategically to differentiate product categories and flavor profiles. The typography is dominated by a brush script style font that is informal, dynamic, and friendly, paired with clean sans-serif fonts for body text to ensure readability. The layout combines a modular grid system with organic, flowing wave shapes that add movement and visual interest, breaking the rigidity of traditional grids. Graphic elements include whimsical, cartoonish product illustrations outlined with thick strokes and playful fruit stickers, reinforcing a handcrafted and artisanal feel. Buttons are rounded with subtle shadows, using bright red for primary calls to action and black for secondary buttons, ensuring clear visibility and inviting interaction. Overall, the design conveys a youthful, energetic, and approachable brand personality, suitable for lifestyle and craft beverage brands seeking to engage a fun-loving audience.",
+        "toneOfVoice": "Playful, energetic, friendly, creative, and approachable.",
+        "tones": [
+          "Vibrant",
+          "Youthful",
+          "Whimsical",
+          "Bold",
+          "Artisanal",
+          "Inviting",
+          "Dynamic",
+          "Fun",
+          "Expressive",
+          "Energetic"
+        ],
+        "designStyle": {
+          "primaryStyle": [
+            "Playful",
+            "Handcrafted",
+            "Bold"
+          ],
+          "supportingStyles": [
+            "Organic",
+            "Modular Grid",
+            "Illustrative"
+          ]
+        },
+        "palette": {
+          "colors": {
+            "primary": "#F7C948",
+            "primaryForeground": "#210D3A",
+            "secondary": "#1557C0",
+            "secondaryForeground": "#FFFFFF",
+            "background": "#FFFFFF",
+            "customColors": [
+              {
+                "name": "brandaccent",
+                "value": "#D93F3F"
+              },
+              {
+                "name": "sweetbackground",
+                "value": "#F9A8D4"
+              },
+              {
+                "name": "sourbackground",
+                "value": "#3B82F6"
+              },
+              {
+                "name": "buttontextprimary",
+                "value": "#FFFFFF"
+              },
+              {
+                "name": "buttonbackgroundsecondary",
+                "value": "#000000"
+              },
+              {
+                "name": "foreground",
+                "value": "#210D3A"
+              },
+              {
+                "name": "destructiveforeground",
+                "value": "#FFFFFF"
+              },
+              {
+                "name": "destructive",
+                "value": "#DF3131"
+              }
+            ]
+          },
+          "paletteUsageGuide": "Use the 'primary' color as the dominant background in hero sections to create a warm and energetic atmosphere, with text and key graphics in 'primaryForeground' to ensure strong contrast and readability. The 'secondary' color serves as a vibrant accent for section backgrounds and interactive elements, paired with 'secondaryForeground' for clear text visibility. The 'brandAccent' color is reserved for primary call-to-action buttons and highlights, drawing user attention effectively. Background colors like 'sweetBackground' and 'sourBackground' differentiate product categories, reinforcing flavor profiles through color coding. Buttons use 'brandAccent' with 'buttonTextPrimary' for primary actions, while secondary buttons use 'buttonBackgroundSecondary' with 'buttonTextPrimary' to maintain contrast and hierarchy. The 'background' color is used for navigation and content areas to provide a clean, neutral canvas. This palette ensures a lively, playful, and accessible user experience with sufficient contrast for readability and interaction.",
+          "paletteAccessibilityNotes": "The 'primaryForeground' color on 'primary' background meets WCAG AA standards for large and normal text, ensuring readability. The 'secondaryForeground' on 'secondary' background also meets WCAG AA contrast requirements. The 'buttonTextPrimary' on 'brandAccent' buttons provides sufficient contrast for accessibility. Secondary buttons with 'buttonTextPrimary' on 'buttonBackgroundSecondary' maintain high contrast ratios. Background colors 'sweetBackground' and 'sourBackground' paired with black or white text have been tested to meet minimum contrast ratios for body and heading text, supporting inclusive design."
+        },
+        "typography": {
+          "headings": {
+            "font": {
+              "role": "Primary Heading Font",
+              "fontFamily": "spicy-rice",
+              "fontJustification": ""
+            },
+            "headingsSimilarFonts": [
+              "lobster",
+              "fredericka the great",
+              "cookie"
+            ],
+            "headingsUsageGuide": "Use the heading font for all major titles and key brand statements to convey personality and energy. Pair with simpler paragraph fonts to maintain readability and hierarchy. Maintain generous spacing around headings to allow the expressive letterforms to breathe. Avoid using this font for body text to preserve legibility. Use 'primaryForeground' or 'secondaryForeground' colors for headings depending on background for optimal contrast.",
+            "headingsAccessibilityNotes": "Headings using this font with 'primaryForeground' on 'primary' background and 'secondaryForeground' on 'secondary' background meet WCAG AA contrast standards for large text. Ensure sufficient size and spacing to maintain readability given the decorative style."
+          },
+          "paragraphs": {
+            "font": {
+              "role": "Main Body Text Font",
+              "fontFamily": "open sans",
+              "fontJustification": ""
+            },
+            "paragraphsSimilarFonts": [
+              "nunito sans",
+              "raleway",
+              "poppins-v2"
+            ],
+            "paragraphsUsageGuide": "Use the paragraph font for all body copy, descriptions, and smaller informational text. It pairs well with the expressive heading font by providing clarity and neutrality. Maintain consistent line height and letter spacing for comfortable reading. Use 'primaryForeground' or black text on light backgrounds and white text on dark backgrounds to ensure contrast.",
+            "paragraphsAccessibilityNotes": "Body text using this font with 'primaryForeground' or black on 'background' or 'sweetBackground' meets WCAG AA contrast requirements. White text on 'secondary' or 'sourBackground' also meets accessibility standards."
+          },
+          "welcomeSectionTypography": {
+            "placement": "Centered",
+            "implementation": "The welcome section uses a large, bold, and expressive heading centered horizontally and vertically within the hero area. The heading is paired with a product image offset to the left and a call-to-action button on the right, creating a balanced asymmetrical composition. The typography is oversized to command attention, with generous spacing around the text to emphasize its playful brush script style. The background uses a bright 'primary' color to enhance vibrancy, while the text uses 'primaryForeground' for strong contrast. This placement strategy creates an inviting and energetic introduction to the brand."
+          },
+          "fontSizes": [
+            {
+              "name": "xs",
+              "size": "0.75rem",
+              "lineHeight": "1.2",
+              "letterSpacing": "0.02em",
+              "fontWeight": "400"
+            },
+            {
+              "name": "sm",
+              "size": "0.875rem",
+              "lineHeight": "1.3",
+              "letterSpacing": "0.02em",
+              "fontWeight": "400"
+            },
+            {
+              "name": "base",
+              "size": "1rem",
+              "lineHeight": "1.5",
+              "letterSpacing": "0.025em",
+              "fontWeight": "400"
+            },
+            {
+              "name": "lg",
+              "size": "1.125rem",
+              "lineHeight": "1.5",
+              "letterSpacing": "0.025em",
+              "fontWeight": "400"
+            },
+            {
+              "name": "xl",
+              "size": "1.25rem",
+              "lineHeight": "1.5",
+              "letterSpacing": "0.025em",
+              "fontWeight": "400"
+            },
+            {
+              "name": "2xl",
+              "size": "1.5rem",
+              "lineHeight": "1.4",
+              "letterSpacing": "0.02em",
+              "fontWeight": "700"
+            },
+            {
+              "name": "3xl",
+              "size": "1.875rem",
+              "lineHeight": "1.3",
+              "letterSpacing": "0.02em",
+              "fontWeight": "700"
+            },
+            {
+              "name": "4xl",
+              "size": "2.25rem",
+              "lineHeight": "1.2",
+              "letterSpacing": "0.015em",
+              "fontWeight": "700"
+            },
+            {
+              "name": "5xl",
+              "size": "3rem",
+              "lineHeight": "1.1",
+              "letterSpacing": "0.01em",
+              "fontWeight": "700"
+            },
+            {
+              "name": "6xl",
+              "size": "3.75rem",
+              "lineHeight": "1.1",
+              "letterSpacing": "0em",
+              "fontWeight": "700"
+            },
+            {
+              "name": "7xl",
+              "size": "4.5rem",
+              "lineHeight": "1",
+              "letterSpacing": "0em",
+              "fontWeight": "700"
+            },
+            {
+              "name": "8xl",
+              "size": "6rem",
+              "lineHeight": "1",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            },
+            {
+              "name": "9xl",
+              "size": "8rem",
+              "lineHeight": "1",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ]
+        },
+        "layout": {
+          "layoutDna": {
+            "densitySpectrum": "Balanced",
+            "contrastSpectrum": "High-Contrast",
+            "gridAlignmentSpectrum": "Modular",
+            "negativeSpaceUsage": "Functional",
+            "textVsImageEmphasis": "Balanced",
+            "complexitySpectrum": "Moderately Complex"
+          },
+          "grid": {
+            "compositionApproach": "Modular with organic wave separators",
+            "spacing": {
+              "columns": "12-column grid",
+              "rows": "Defined content rows",
+              "gaps": "Consistent medium gaps"
+            },
+            "margins": "Generous page margins",
+            "padding": "Consistent padding within containers"
+          }
+        },
+        "components": {
+          "containers": "Containers use solid background colors from the palette to differentiate sections, with generous padding and rounded corners in some cases. The header container is a white pill-shaped bar with rounded edges, creating a friendly and approachable navigation area. Section containers are separated by organic wave shapes that add visual flow and break grid rigidity.",
+          "images": "Product images are stylized cans with hand-drawn, cartoonish animal faces outlined with thick black strokes and subtle shadows, creating a playful and artistic look. Images are prominently placed and often offset asymmetrically to create dynamic layouts.",
+          "buttons": "Buttons are rounded with subtle shadows or offset layers to create a slight 3D effect. Primary buttons use the 'brandAccent' color with 'buttonTextPrimary' for text, ensuring high visibility and inviting interaction. Secondary buttons use black backgrounds with white text for contrast on lighter backgrounds. Button typography uses the playful brush script font to maintain brand personality."
+        },
+        "graphicElements": {
+          "icons": "Icons are minimal or absent; the design relies more on illustrative elements and typography for personality.",
+          "illustrations": "Hand-drawn, cartoonish illustrations of fruits (lime, strawberry, lemon) appear as stickers or badges scattered around the 'About Us' section, reinforcing the handcrafted and whimsical brand identity.",
+          "stickers": "Sticker-style fruit illustrations with thick outlines and bright colors add playful accents and visual interest, enhancing the artisanal feel."
+        }
+      },
+      "originImagesUrls": [
+        "https://wixmp-fe53c9ff592a4da924211f23.wixmp.com/uploads/1752411571376-Screenshot%202025-07-13%20at%2015.48.44.png"
+      ]
+    }
+  ],
+  "brandBook": {
+    "tones": [
+      "Disruptive",
+      "Futuristic",
+      "Minimalistic",
+      "High-Contrast",
+      "Digital",
+      "Retro-Tech",
+      "Avant-Garde",
+      "Creative",
+      "Energetic",
+      "Experimental"
+    ],
+    "designStyle": {
+      "primaryStyle": [
+        "Glitch Art",
+        "Minimalism",
+        "Digital Retro"
+      ],
+      "supportingStyles": [
+        "Modular Layout",
+        "Techno-Futurism",
+        "Pixel Art"
+      ]
+    },
+    "toneOfVoice": "Edgy, experimental, artistic, tech-savvy, innovative, and bold.",
+    "components": {
+      "images": "Images and graphic elements are treated as integral parts of the design, often featuring glitch effects, pixelation, and static noise textures. They are framed within geometric shapes such as circles or rectangles and placed asymmetrically to create visual tension.",
+      "buttons": "Buttons are minimalistic with solid neon backgrounds or outlined styles using 'secondary' or custom neon colors. Text on buttons uses 'primaryForeground' or 'primary' colors to maintain contrast. Hover states invert colors or add glitch-like animations for interactivity.",
+      "containers": "Containers use solid black or white backgrounds to create strong contrast zones. They are often full-width with generous padding and margins to isolate content blocks. Accent containers use neon colors sparingly to highlight key areas without overwhelming the layout."
+    },
+    "typography": {
+      "headings": {
+        "font": {
+          "role": "Primary Heading Font",
+          "fontFamily": "helvetica-w01-roman",
+          "fontJustification": ""
+        },
+        "headingsUsageGuide": "Use the heading font in large sizes with tight letter spacing to create impactful, bold statements. Headings should contrast sharply with body text, using the 'primaryForeground' color on 'primary' backgrounds or vice versa. The font pairs well with monospaced paragraph fonts to reinforce the digital aesthetic. Maintain consistent vertical rhythm and spacing to balance the modular layout.",
+        "headingsSimilarFonts": [
+          "roboto",
+          "raleway",
+          "poppins-v2"
+        ],
+        "headingsAccessibilityNotes": "Headings using the 'primaryForeground' color on 'primary' backgrounds meet WCAG AA contrast standards, ensuring clear readability."
+      },
+      "fontSizes": [
+        {
+          "name": "xs",
+          "size": "0.75rem",
+          "letterSpacing": "0.05em",
+          "lineHeight": "1",
+          "fontWeight": "400"
+        },
+        {
+          "name": "sm",
+          "size": "0.875rem",
+          "letterSpacing": "0.04em",
+          "lineHeight": "1.25",
+          "fontWeight": "400"
+        },
+        {
+          "name": "base",
+          "size": "1rem",
+          "letterSpacing": "0.03em",
+          "lineHeight": "1.5",
+          "fontWeight": "400"
+        },
+        {
+          "name": "lg",
+          "size": "1.125rem",
+          "letterSpacing": "0.02em",
+          "lineHeight": "1.5",
+          "fontWeight": "500"
+        },
+        {
+          "name": "xl",
+          "size": "1.25rem",
+          "letterSpacing": "0.01em",
+          "lineHeight": "1.5",
+          "fontWeight": "600"
+        },
+        {
+          "name": "2xl",
+          "size": "1.5rem",
+          "letterSpacing": "0em",
+          "lineHeight": "1.4",
+          "fontWeight": "600"
+        },
+        {
+          "name": "3xl",
+          "size": "1.875rem",
+          "letterSpacing": "-0.01em",
+          "lineHeight": "1.3",
+          "fontWeight": "700"
+        },
+        {
+          "name": "4xl",
+          "size": "2.25rem",
+          "letterSpacing": "-0.02em",
+          "lineHeight": "1.2",
+          "fontWeight": "700"
+        },
+        {
+          "name": "5xl",
+          "size": "3rem",
+          "letterSpacing": "-0.03em",
+          "lineHeight": "1.1",
+          "fontWeight": "800"
+        },
+        {
+          "name": "6xl",
+          "size": "3.75rem",
+          "letterSpacing": "-0.04em",
+          "lineHeight": "1.1",
+          "fontWeight": "800"
+        },
+        {
+          "name": "7xl",
+          "size": "4.5rem",
+          "letterSpacing": "-0.05em",
+          "lineHeight": "1",
+          "fontWeight": "900"
+        },
+        {
+          "name": "8xl",
+          "size": "6rem",
+          "letterSpacing": "-0.06em",
+          "lineHeight": "1",
+          "fontWeight": "900"
+        },
+        {
+          "name": "9xl",
+          "size": "8rem",
+          "letterSpacing": "-0.07em",
+          "lineHeight": "1",
+          "fontWeight": "900"
+        }
+      ],
+      "paragraphs": {
+        "font": {
+          "role": "Main Body Text Font",
+          "fontFamily": "courier new",
+          "fontJustification": ""
+        },
+        "paragraphsUsageGuide": "Paragraph text should be set in the monospaced font to reinforce the tech and glitch theme. Use moderate font sizes with ample line height for readability. Text color should be 'primaryForeground' on 'primary' backgrounds or 'primary' on 'background' to maintain contrast. Pairing with bold sans-serif headings creates a dynamic typographic hierarchy.",
+        "paragraphsSimilarFonts": [
+          "roboto",
+          "open sans",
+          "work-sans-v2"
+        ],
+        "paragraphsAccessibilityNotes": "Paragraph text combinations with 'primaryForeground' and 'primary' or 'background' colors meet WCAG AA contrast requirements for body text."
+      },
+      "welcomeSectionTypography": {
+        "placement": "Top-Third Anchor",
+        "implementation": "The welcome section uses a large, bold heading anchored in the top third of the viewport, creating immediate visual impact. The heading is paired with smaller monospaced body text aligned left, with ample negative space around to emphasize the glitch-inspired graphics on the right. This placement balances text and visuals, guiding the viewer's eye naturally from the bold statement to supporting content."
+      }
+    },
+    "originImagesUrls": [
+      "https://wixmp-fe53c9ff592a4da924211f23.wixmp.com/uploads/1752422373357-Screenshot%202025-07-13%20at%2018.59.06.png"
+    ],
+    "layout": {
+      "grid": {
+        "margins": "Generous page margins",
+        "padding": "Consistent padding within containers",
+        "spacing": {
+          "gaps": "Variable large gaps",
+          "rows": "Defined content rows",
+          "columns": "12-column grid"
+        },
+        "compositionApproach": "Modular"
+      },
+      "layoutDna": {
+        "contrastSpectrum": "High-Contrast",
+        "densitySpectrum": "Balanced",
+        "textVsImageEmphasis": "Balanced",
+        "complexitySpectrum": "Moderately Complex",
+        "gridAlignmentSpectrum": "Modular",
+        "negativeSpaceUsage": "Generous"
+      }
+    },
+    "graphicElements": {
+      "icons": "Icons are pixelated or geometric, often monochrome or neon-colored, matching the glitch aesthetic. They are simple but bold, used sparingly to support navigation and calls to action.",
+      "stickers": "Stickers or badges, if used, follow the glitch theme with pixelated edges, neon outlines, and static textures. They are used to highlight special features or calls to action.",
+      "illustrations": "Illustrations are abstract, glitch-inspired shapes with pixelation, static noise, and bright neon colors. They serve as visual anchors and thematic reinforcements rather than detailed imagery."
+    },
+    "designSummary": "This brand identity embraces a bold, avant-garde visual style rooted in glitch art and digital retro aesthetics. The design features a high-contrast color palette dominated by black and white, punctuated with vivid neon accent colors such as lime green, magenta, cyan, red, and blue. These colors evoke the look of vintage broadcast test patterns and digital screen calibration bars, reinforcing a tech-inspired, experimental atmosphere. Typography is modern and minimalistic, combining large, impactful sans-serif fonts with monospaced or typewriter-style fonts that suggest a digital terminal or coding environment. The layout is modular and grid-based but intentionally irregular, creating visual tension and a sense of controlled chaos typical of glitch art. Graphic elements include pixelated noise textures, static patterns, and distorted geometric shapes, which are integral to the brand's digital art identity. Overall, the design conveys a cutting-edge, artistic, and tech-savvy personality that breaks from traditional web design conventions.",
+    "palette": {
+      "colors": {
+        "background": "#FFFFFF",
+        "secondary": "#00FF00",
+        "customColors": [
+          {
+            "name": "neonmagenta",
+            "value": "#FF00FF"
+          },
+          {
+            "name": "neoncyan",
+            "value": "#00FFFF"
+          },
+          {
+            "name": "neonred",
+            "value": "#FF0000"
+          },
+          {
+            "name": "neonblue",
+            "value": "#0000FF"
+          },
+          {
+            "name": "staticgray",
+            "value": "#7F7F7F"
+          },
+          {
+            "name": "foreground",
+            "value": "#000000"
+          },
+          {
+            "name": "destructive",
+            "value": "#DF3131"
+          },
+          {
+            "name": "destructiveforeground",
+            "value": "#FFFFFF"
+          }
+        ],
+        "secondaryForeground": "#000000",
+        "primaryForeground": "#FFFFFF",
+        "primary": "#000000"
+      },
+      "paletteUsageGuide": "Use the 'primary' color as the dominant background or text color to establish a strong, high-contrast foundation. The 'primaryForeground' color should be used for text and icons on 'primary' backgrounds to ensure readability. The 'secondary' color, a vivid neon green, serves as a highlight and branding accent, paired with 'secondaryForeground' for contrast. Custom colors such as 'neonMagenta', 'neonCyan', 'neonRed', and 'neonBlue' are used sparingly in graphic elements and color calibration bars to evoke a digital glitch aesthetic. The custom color foreground is paired with the background. The 'staticGray' color is reserved for noise and static textures, adding depth and visual interest. These colors should be combined to create dynamic, energetic compositions while maintaining accessibility and legibility.",
+      "paletteAccessibilityNotes": "The 'primary' and 'primaryForeground' color combination meets WCAG AA standards for text contrast, ensuring readability. The 'secondary' and 'secondaryForeground' pairing also meets contrast requirements for accent elements. Custom neon colors should be used primarily in large graphic elements or non-textual components to avoid accessibility issues. When used for text or UI elements, ensure sufficient contrast by pairing with 'primary' or 'background' colors. The 'staticGray' color is used decoratively and does not require strict contrast compliance."
+    }
+  },
+  "initialPrompt": "Build a modern, responsive website for a JavaScript animation library. The site should introduce the library as a modular, open-source animation engine with a plugin system. Include a homepage, live playground for previewing and tweaking animations, a gallery of community-contributed animations with tags and code snippets, a 'Create Your Own' page for submitting new animations, responsive UI with dark/light mode, documentation pages, JavaScript logic for animation chaining and timelines, polished CSS styling, accessibility features, SEO-friendly structure, sleek and futuristic design (glassmorphism, subtle motion, modular layout), placeholder animations, GitHub integration, real-time preview, and export options to CodePen or JSFiddle. Use design agent Knox.",
+  "status": "READY",
+  "revision": "13",
+  "createdDate": "2025-11-15T14:25:18.417Z",
+  "updatedDate": "2025-11-15T14:25:56.639Z",
+  "attachments": {
+    "contentImagesUrls": [],
+    "inspirationImagesUrls": []
+  },
+  "selectedBrandingPresetId": "05d904e4-2dcb-41c6-8d24-51e9b498250c",
+  "plan": "{\n  \"sections\": [\n    {\n      \"id\": \"overview\",\n      \"title\": \"## Overview\",\n      \"content\": \"This plan outlines a modern, responsive website for a JavaScript animation library. The site will introduce the library's modular, open-source nature and plugin system, showcase community contributions, provide a live playground for experimentation, and offer documentation.\"\n    },\n    {\n      \"id\": \"key-features\",\n      \"title\": \"## Key features\",\n      \"content\": \"- **View Homepage Content**: Introduces the JavaScript animation library, highlighting its modularity, open-source nature, and plugin system.\\n- **View Animation Gallery Listing**: Displays a collection of community-contributed animations.\\n- **Filter Animations**: Allows users to filter the animation gallery by tags.\\n- **View Animation Details**: Shows a specific community animation, including its code snippet and tags.\\n- **Submit New Animation**: Provides a form for users to submit their own animations, including code snippets and relevant tags.\\n- **View Documentation**: Presents the official documentation for the animation library.\\n- **Access Live Playground**: Allows users to preview and tweak animations in real-time.\",\n      \"metadata\": [\n        { \"id\": \"view-homepage-content\", \"name\": \"View Homepage Content\" },\n        { \"id\": \"view-animation-gallery-listing\", \"name\": \"View Animation Gallery Listing\" },\n        { \"id\": \"filter-animations\", \"name\": \"Filter Animations\" },\n        { \"id\": \"view-animation-details\", \"name\": \"View Animation Details\" },\n        { \"id\": \"submit-new-animation\", \"name\": \"Submit New Animation\" },\n        { \"id\": \"view-documentation\", \"name\": \"View Documentation\" },\n        { \"id\": \"access-live-playground\", \"name\": \"Access Live Playground\" }\n      ]\n    },\n    {\n      \"id\": \"structure\",\n      \"title\": \"## Structure\",\n      \"content\": \"- **Homepage**: Introduces the library and provides navigation to other sections.\\n- **Animation Gallery Page**: Hosts the listing, filtering, and detail view of community animations.\\n- **Submit Animation Page**: Contains the form for users to submit new animations.\\n- **Documentation Pages**: Houses the library's official documentation.\\n- **Playground Page**: A dedicated space for users to interact with and test animations.\"\n    }\n  ],\n  \"apps\": [\n    {\n      \"id\": \"wix-cms\",\n      \"keyFeatures\": [\n        { \"id\": \"view-homepage-content\", \"name\": \"View Homepage Content\" },\n        { \"id\": \"view-animation-gallery-listing\", \"name\": \"View Animation Gallery Listing\" },\n        { \"id\": \"filter-animations\", \"name\": \"Filter Animations\" },\n        { \"id\": \"view-animation-details\", \"name\": \"View Animation Details\" },\n        { \"id\": \"submit-new-animation\", \"name\": \"Submit New Animation\" },\n        { \"id\": \"view-documentation\", \"name\": \"View Documentation\" }\n      ]\n    }\n  ],\n  \"version\": \"2.5\"\n}",
+  "designerData": {
+    "designerId": "9dcf58b6-5fdc-4458-a378-9f01648cc995",
+    "designerName": "Knox",
+    "selectionMethod": "UNSELECTED"
+  }
+}
